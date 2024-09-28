@@ -1,0 +1,45 @@
+@import "./../../styles/mixins.scss";
+
+.MapPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #252525;
+  .map {
+    height: 70vh;
+    border-radius: 40px;
+    background-color: #252525;
+  }
+  .menuBotoom {
+    border-radius: 40px;
+    background-color: #fff;
+    margin-top: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 28vh;
+    h2 {
+      font-family: "Onest";
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30.6px;
+      text-align: left;
+      margin-left: 20px;
+    }
+    input {
+      @include Input();
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border: none;
+      background-color: #f7f7f7;
+    }
+    button {
+      border-radius: 40px;
+      width: 90%;
+      margin: 0 auto;
+      height: 50px;
+      background-color: #252525;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "./../../styles/mixins.scss";
+
+.Restaurant {
+  .title {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    .imgBg {
+      width: 102vw;
+      transform: translateY(-20px);
+      height: 266px;
+      border-radius: 0px 0px 20px 20px;
+      object-fit: cover;
+      filter: brightness(0.7) blur(1px);
+    }
+    // .arrowL {
+    //   position: absolute;
+    //   width: 36px;
+    //   height: 36px;
+    //   top: 47px;
+    //   left: 16px;
+    //   z-index: 1;
+    // }
+
+    .imgs {
+      display: flex;
+      position: absolute;
+      flex-direction: row;
+      justify-content: space-between;
+      top: 47px;
+      width: 90vw;
+      .arrowL1 {
+        margin-right: 10px;
+      }
+    }
+
+    .rating {
+      position: absolute;
+      right: 20px;
+      bottom: 40px;
+    }
+
+    .titleBottomLeft {
+      position: absolute;
+      bottom: 20px;
+      z-index: 1;
+      display: flex;
+      left: 0;
+      flex-direction: column;
+      padding-left: 16px;
+
+      p {
+        font-family: "Onest";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 24.48px;
+        text-align: left;
+        color: #ffffff;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 11px;
+      }
+      span {
+        font-family: "Onest";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14.28px;
+        color: #ffffff;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    padding: 0px 16px;
+    box-sizing: border-box;
+  }
+  .search {
+    @include Input();
+  }
+
+  .gruz {
+    display: flex;
+    align-items: center;
+   
+    width: 90%;
+    margin-top: 0;
+    margin-left: 10px;
+    overflow-x: auto;
+
+    p {
+      font-family: "Onest";
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 17.85px;
+      text-align: left;
+      border: 0.7px solid #252525;
+      padding: 7px 11px;
+      border-radius: 18px;
+      margin: 0;
+      margin-right: 10px;
+    }
+  }
+
+  h2 {
+    font-family: "Onest";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24.48px;
+    text-align: left;
+    margin-top: 30px;
+  }
+
+  .boxPlitka {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Bottom {
+    width: 100%;
+    position: fixed;
+    bottom: 10px;
+    button {
+      display: flex;
+      flex-direction: row;
+      background-color: #252525;
+      width: 90%;
+      border-radius: 40px;
+      color: #fff;
+      justify-content: space-between;
+      padding: 0px 22px;
+      box-sizing: border-box;
+      margin: 0 auto;
+      align-items: center;
+      position: relative;
+      left: -18px;
+
+    }
+    p {
+      padding: 0;
+      margin: 0;
+    }
+    p:nth-child(1) {
+      font-family: "Onest";
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    p:nth-child(2) {
+      font-family: "Onest";
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      color: #c8c8c8;
+      padding: 14px;
+      background-color: #383838;
+      border-radius: 40px;
+      transform: translateX(22px);
+    }
+  }
+}
